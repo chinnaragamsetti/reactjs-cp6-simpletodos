@@ -1,0 +1,26 @@
+/* Write your CSS here */
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc2a0;
+  height: 100vh;
+  padding: 10px;
+}
+.subcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.heading {
+  font-size: 30px;
+  color: #ff8542;
+}
+.todoListcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

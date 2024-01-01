@@ -1,0 +1,19 @@
+/* Write your CSS here */
+
+.eachtodo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todoheading {
+  font-size: 20px;
+  color: #000000;
+}
+.button {
+  font-size: 10px;
+  padding: 3px;
+  border: 1px solid #ff0b37;
+  color: #ff0b37;
+  border-radius: 5px;
+  cursor: pointer;
+}
