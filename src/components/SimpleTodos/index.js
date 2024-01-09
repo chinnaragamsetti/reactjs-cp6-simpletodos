@@ -40,19 +40,21 @@ const initialTodosList = [
 class SimpleTodos extends Component {
   state = {todosList: initialTodosList}
 
-  deletetodo = id => {
+  deleteuser = id => {
     const {todosList} = this.state
     const afterdeletetodolist = todosList.filter(each => each.id !== id)
     this.setState((todosList: afterdeletetodolist))
   }
 
   render() {
+    const {todosList} = this.state
+
     return (
       <div className="maincontainer">
         <div className="subcontainer">
           <h1 className="heading">Simple Todos</h1>
           <ul className="todoListcontainer">
-            {afterdeletetodolist.map(eachtodo => (
+            {todosList.map(eachtodo => (
               <TodoItem
                 tododetails={eachtodo}
                 key={eachtodo.id}
