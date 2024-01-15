@@ -3,14 +3,14 @@
 import './index.css'
 
 const TodoItem = props => {
-  const {tododetails, deletetodo} = props
+  const {tododetails, deleteTodo} = props
   const {id, title} = tododetails
   const onDelete = () => {
-    deletetodo(id)
+    deleteTodo(id)
   }
   return (
     <li className="eachtodo">
-      <h1 className="todoheading">{title}</h1>
+      <p className="todoheading">{title}</p>
       <button type="button" className="button" onClick={onDelete}>
         Delete
       </button>

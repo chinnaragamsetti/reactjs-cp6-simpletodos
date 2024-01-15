@@ -8,11 +8,12 @@
   padding: 10px;
 }
 .subcontainer {
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  border-radius: 10px;
   background-color: #ffffff;
 }
 .heading {
@@ -21,6 +22,7 @@
 }
 .todoListcontainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
 }

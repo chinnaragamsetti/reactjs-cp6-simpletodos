@@ -40,10 +40,10 @@ const initialTodosList = [
 class SimpleTodos extends Component {
   state = {todosList: initialTodosList}
 
-  deleteuser = id => {
+  deleteUser = id => {
     const {todosList} = this.state
     const afterdeletetodolist = todosList.filter(each => each.id !== id)
-    this.setState((todosList: afterdeletetodolist))
+    this.setState({todosList: afterdeletetodolist})
   }
 
   render() {
@@ -58,7 +58,7 @@ class SimpleTodos extends Component {
               <TodoItem
                 tododetails={eachtodo}
                 key={eachtodo.id}
-                deletetodo={this.deleteuser}
+                deleteTodo={this.deleteUser}
               />
             ))}
           </ul>
